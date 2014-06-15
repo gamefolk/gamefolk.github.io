@@ -1,3 +1,4 @@
 name: Gamefolk.org
 markdown: redcarpet
 highlighter: true
+permalink: pretty
