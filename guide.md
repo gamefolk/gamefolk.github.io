@@ -24,7 +24,7 @@ when presented with the bad code. This can be very frustrating, as your program
 will compile correctly yet fail. Here are a few issues that you might run into
 when using GBDK:
 
-### C99 Incompatibility
+### Beware C99 incompatibilities, use C89 if possible
 
 When using lcc, you should write strict C89 (also known as ANSI C). While lcc
 will accept many C99 constructs and GNU extensions, SDCC will not compile them
@@ -59,12 +59,12 @@ Due to inefficiencies in how SDCC implements loads from ROM, static data such as
 tiles and music should __always__ be declared `const`. If not, the data gets
 copied into RAM *and* takes up about six times the ROM space.
 
-### External Linkage
+### Do not use external linkage
 
 Avoid using the `extern` keyword. SDCC does not implement external linkage
 correctly, and thus will compile incorrect code and fail silently.
 
-## Testing
+### Test on an accurate emulator
 
 You should use as accurate an emulator as possible when testing your GBDK
 program. I recommend [BGB]. Although it is a native Windows program, it runs
