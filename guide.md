@@ -53,6 +53,12 @@ following lines after the initial includes in that file to silence those errors.
 #endif
 ```
 
+### Static data should be declared `const`
+
+Due to inefficiencies in how SDCC implements loads from ROM, static data such as
+tiles and music should __always__ be declared `const`. If not, the data gets
+copied into RAM *and* takes up about six times the ROM space.
+
 ### External Linkage
 
 Avoid using the `extern` keyword. SDCC does not implement external linkage
