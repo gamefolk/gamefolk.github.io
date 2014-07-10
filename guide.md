@@ -38,10 +38,10 @@ faults. Some limitations of C89 are as follows:
   * No C++ style `//` comments. Delimit all comments with `/*` and `*/`.
 
 I recommend using another C compiler such as gcc or clang to compile your code
-before compiling it with lcc. Consider using you are using another compiler to
-check your code before sending it lcc, I recommend using the `-std=c89` and
-`-pedantic` (or `-pedantic-errors`) to help catch bugs that stem from compiling
-C99 with lcc.
+before compiling it with lcc. Consider using  another compiler to check your
+code before sending it lcc. I recommend using clang with the `-std=c89` and
+`-pedantic` (or `-pedantic-errors`) flags to help catch bugs that stem from
+compiling C99 with lcc.
 
 *Note:* your compiler may have trouble compiling GBDK headers such as `gb/gb.h`
 and complain about implicit declarations of GBDK library functions. Add the
