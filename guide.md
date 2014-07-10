@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Gamefolk's Guide to GBDK
+title: GameFolk's Guide to GBDK
 ---
 
-# Gamefolk's Guide to GBDK
+# GameFolk's Guide to GBDK
 
 ## Preface
 
