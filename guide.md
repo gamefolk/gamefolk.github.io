@@ -37,9 +37,8 @@ faults. Some limitations of C89 are as follows:
     before the loop.
   * No C++ style `//` comments. Delimit all comments with `/*` and `*/`.
 
-I recommend using another C compiler such as gcc or clang to compile your code
-before compiling it with lcc. Consider using  another compiler to check your
-code before sending it lcc. I recommend using clang with the `-std=c89` and
+Consider using another C compiler such as gcc or clang to compile your code
+before compiling it with lcc. I recommend using clang with the `-std=c89` and
 `-pedantic` (or `-pedantic-errors`) flags to help catch bugs that stem from
 compiling C99 with lcc.
 
